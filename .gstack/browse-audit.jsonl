@@ -1,0 +1,2 @@
+{"ts":"2026-07-31T17:26:31.746Z","cmd":"goto","args":"http://localhost:8080","origin":"http://localhost:8080/","durationMs":241,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-07-31T17:26:33.113Z","cmd":"screenshot","args":"/tmp/ciftn_preview.png","origin":"http://localhost:8080/","durationMs":1327,"status":"ok","hasCookies":false,"mode":"launched"}

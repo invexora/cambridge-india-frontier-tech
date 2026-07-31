@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cambridge–India Frontier Technology Network</title>
+    <meta name="description" content="A standing UK–India network convening capital, research and policy across AI infrastructure, space data centres and genomics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="top">
+        <div class="wrap">
+            <nav class="hero__nav mono" aria-label="Primary">
+                <a href="#top" class="brand-title">Cambridge–India Frontier Tech Network</a>
+                <div class="hero__navlinks">
+                    <a href="#thesis">Thesis</a>
+                    <a href="#frugal">The Edge</a>
+                    <a href="#tracks">Tracks</a>
+                    <a href="#deck">Slide Deck</a>
+                    <a href="#video">Video</a>
+                    <a href="#paper">Paper</a>
+                    <a href="#conveners">Conveners</a>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1>Frontier technology needs a <em>confluence</em>, not a corridor.</h1>
+                <p class="hero__deck">Convening capital, research, and policy across AI infrastructure, space data centres, and genomics. Launched in London alongside the UK–India Free Trade Agreement.</p>
+                <div class="hero__meta mono">
+                    <span class="pulse-tag">● Inaugural Roundtable</span>
+                    <span>London</span>
+                    <span>15 July 2026</span>
+                </div>
+                <div class="cta-row">
+                    <a class="btn btn--solid" href="#deck">View Visual Slide Deck</a>
+                    <button class="btn btn--ghost" id="readPaperModalBtn">Read Discussion Paper</button>
+                    <button class="btn btn--ghost btn--cam" id="openInviteBtn">Join Network</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signature Confluence SVG Animation -->
+        <svg class="confluence" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Two rivers converging into one — the Sangam.">
+            <path class="stream stream--cam" d="M-20,40 C 200,40 360,80 470,125 C 520,145 560,152 596,158"/>
+            <path class="stream stream--ind" d="M1220,30 C 1000,30 820,80 726,125 C 682,145 638,152 604,158"/>
+            <path class="stream stream--lost" d="M60,240 C 260,230 440,200 552,165 C 572,158 586,158 596,158"/>
+            <path class="stream stream--merged" d="M600,160 C 600,190 598,215 600,240"/>
+            <circle class="node pulse-node" cx="600" cy="159" r="6" fill="#E0972A"/>
+            <circle class="node" cx="600" cy="159" r="14" fill="none" stroke="#E0972A" stroke-width="1.5" opacity="0.4"/>
+            <text x="15" y="32" fill="#7FB3C4">Cambridge</text>
+            <text x="1185" y="22" fill="#E0972A" text-anchor="end">India</text>
+            <text x="70" y="230" fill="#9C3B2E">The Unseen Third Stream</text>
+        </svg>
+    </header>
+
+    <main>
+        <!-- 01 THESIS (COMPACT VISUAL CARDS) -->
+        <section class="band" id="thesis">
+            <div class="wrap rail">
+                <p class="mono rail__label">01 — Thesis</p>
+                <div>
+                    <blockquote class="pull">India has a clear shot to be the world's capital of the AI app layer — estimated at $50 Trillion over the next decade.</blockquote>
+                    <div class="split">
+                        <div class="visual-card glow-card">
+                            <span class="mono badge-madder">The Gap</span>
+                            <h3>Success That Softened Us</h3>
+                            <div class="stat-highlight">
+                                <span class="stat-number">~$600B</span>
+                                <span class="stat-label">Returned by IT services via buybacks vs <strong>$10–20B</strong> invested in deeptech</span>
+                            </div>
+                            <p>Prioritizing safe dividends over compounding capital into deeptech created a return-on-investment model looking through the rear-view mirror.</p>
+                        </div>
+                        <div class="visual-card highlight-card glow-card">
+                            <span class="mono badge-marigold">The Confluence</span>
+                            <h3>A Renaissance in Deeptech</h3>
+                            <div class="stat-highlight">
+                                <span class="stat-number">$50 Trillion</span>
+                                <span class="stat-label">Global AI app & deeptech opportunity for UK–India founders</span>
+                            </div>
+                            <p>Founders building reusable rockets, orbital compute, quantum, and AI infrastructure. The network provides the bilateral glue between capital and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 THE EDGE (COMPACT COST COMPARISON GRAPHIC) -->
+        <section class="band band--dark" id="frugal">
+            <div class="wrap rail">
+                <p class="mono rail__label">02 — The Edge</p>
+                <div>
+                    <h2 class="section-title">Frugal is a different physics of cost.</h2>
+                    <p class="measure-short">ISRO landed Chandrayaan-3 on the lunar south pole for $75M — a fraction of conventional space missions. The same arithmetic governs the frontier AI application layer.</p>
+                    
+                    <div class="costs" id="costs">
+                        <div class="cost cost--isro">
+                            <div class="cost__head"><span class="cost__name">🚀 Chandrayaan-3 Lunar Landing</span><span class="cost__fig">$75M</span></div>
+                            <div class="cost__track"><div class="cost__bar" style="--w: 2.8%;"></div></div>
+                        </div>
+                        <div class="cost cost--low">
+                            <div class="cost__head"><span class="cost__name">🛰️ NASA Planetary Mission (Lower Band)</span><span class="cost__fig">$600M</span></div>
+                            <div class="cost__track"><div class="cost__bar" style="--w: 22.2%;"></div></div>
+                        </div>
+                        <div class="cost cost--high">
+                            <div class="cost__head"><span class="cost__name">🛸 Proposed Lunar Lander Contracts</span><span class="cost__fig">$2.7B</span></div>
+                            <div class="cost__track"><div class="cost__bar" style="--w: 100%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 STRATEGIC TRACKS (3 VISUAL CARDS) -->
+        <section class="band" id="tracks">
+            <div class="wrap rail">
+                <p class="mono rail__label">03 — Tracks</p>
+                <div>
+                    <h2 class="section-title">Three tracks, one network.</h2>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="tracks-grid">
+                    <article class="track-card">
+                        <div class="track-icon">🤖</div>
+                        <span class="mono track-num">Track I</span>
+                        <h3>AI Infrastructure</h3>
+                        <p>Sovereign compute, green data centres, and population-scale AI rails — led by Frugal AI Hub & CJBS.</p>
+                        <span class="track-badge">Digital Public Infra</span>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-icon">🚀</div>
+                        <span class="mono track-num">Track II</span>
+                        <h3>Space Data Centres</h3>
+                        <p>Orbital compute, heat rejection, and ISRO-grade thermal engineering meets UK space capital.</p>
+                        <span class="track-badge">Orbital Compute</span>
+                    </article>
+                    <article class="track-card">
+                        <div class="track-icon">🧬</div>
+                        <span class="mono track-num">Track III</span>
+                        <h3>Genomics & Health</h3>
+                        <p>Population-scale genomic data governance, bringing frugal health solutions from cohort to clinic.</p>
+                        <span class="track-badge">Cohort to Clinic</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 COMPACT SLIDABLE VISUAL PRESENTATION DECK (CAROUSEL) -->
+        <section class="band band--dark" id="deck">
+            <div class="wrap rail">
+                <p class="mono rail__label">04 — Visual Deck</p>
+                <div>
+                    <div class="deck-header-row">
+                        <h2 class="section-title">Inaugural Presentation Deck</h2>
+                        <a class="btn btn--solid btn--sm" href="./presentation-deck.pdf" target="_blank" rel="noopener">Download PDF Deck ↗</a>
+                    </div>
+                    
+                    <!-- Compact Slide Carousel Box -->
+                    <div class="carousel-box">
+                        <div class="carousel-viewport">
+                            <button class="carousel-arrow arrow-prev" id="slidePrev" aria-label="Previous Slide">‹</button>
+                            <img id="carouselSlideImg" src="slide-1.png" alt="Presentation Slide" class="carousel-img">
+                            <button class="carousel-arrow arrow-next" id="slideNext" aria-label="Next Slide">›</button>
+                        </div>
+                        <div class="carousel-dots-bar">
+                            <span class="mono slide-counter-label" id="slideCounterText">Slide 1 of 6</span>
+                            <div class="dots-wrapper">
+                                <button class="dot-btn active" data-slide="1"></button>
+                                <button class="dot-btn" data-slide="2"></button>
+                                <button class="dot-btn" data-slide="3"></button>
+                                <button class="dot-btn" data-slide="4"></button>
+                                <button class="dot-btn" data-slide="5"></button>
+                                <button class="dot-btn" data-slide="6"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 ROUNDTABLE VIDEO BROADCAST -->
+        <section class="band" id="video">
+            <div class="wrap rail">
+                <p class="mono rail__label">05 — Video Broadcast</p>
+                <div>
+                    <h2 class="section-title">Inaugural Roundtable Broadcast</h2>
+                    <div class="chapter-bar">
+                        <span class="mono" style="color:var(--river);">Chapters:</span>
+                        <button class="chip-btn active" data-time="0">00:00 Welcome</button>
+                        <button class="chip-btn" data-time="250">04:10 CETA Launch</button>
+                        <button class="chip-btn" data-time="804">13:24 Frugal AI</button>
+                        <button class="chip-btn" data-time="1142">19:02 Green Infra</button>
+                        <button class="chip-btn" data-time="1531">25:31 Space Solar</button>
+                        <button class="chip-btn" data-time="2116">35:16 ISRO Thermal</button>
+                        <button class="chip-btn" data-time="2435">40:35 VC & Debt</button>
+                    </div>
+
+                    <div class="compact-video-box">
+                        <div class="video-overlay" id="videoOverlay">
+                            <button class="play-btn-large" id="playVideoBtn" aria-label="Play Roundtable">▶</button>
+                            <div class="video-caption-title">Cambridge–India Frontier Technology Network Launch</div>
+                            <div class="video-speakers-list">Featuring: Dr. Jaideep Prabhu, Sanjay Phadke, Serish Gandikota, Srinivas Varadarajan, Dr. Luisa Corrado, Satish Wani, Brishni, Gaurav Mahajan, Sriram Kintada</div>
+                        </div>
+                        <video id="mainVideo" class="custom-video" poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720' viewBox='0 0 1280 720'><rect width='1280' height='720' fill='%230e1730'/><text x='50%' y='45%' dominant-baseline='middle' text-anchor='middle' fill='%23e0972a' font-family='Fraunces' font-size='36'>CAMBRIDGE–INDIA FRONTIER TECH</text><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%237fb3c4' font-family='IBM Plex Mono' font-size='18'>Inaugural Roundtable Broadcast · London</text></svg>">
+                            <source src="#" type="video/mp4">
+                        </video>
+                        <div class="video-controls">
+                            <button class="ctrl-btn" id="btnPlayPause">▶</button>
+                            <div class="progress-bar-wrap" id="progressBarWrap">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <span class="video-time" id="currentTime">00:00</span> / <span class="video-time">59:54</span>
+                            <button class="ctrl-btn" id="btnMute">🔊</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 SLIDABLE DISCUSSION PAPER CAROUSEL -->
+        <section class="band band--dark" id="paper">
+            <div class="wrap rail">
+                <p class="mono rail__label">06 — Paper</p>
+                <div>
+                    <div class="deck-header-row">
+                        <div>
+                            <h2 class="section-title">India @ AI & Deeptech Crossroads</h2>
+                            <p class="mono" style="color:var(--cam);">Discussion Paper by Sanjay Phadke & Dr. Jaideep Prabhu</p>
+                        </div>
+                        <a class="btn btn--solid btn--sm" href="./discussion-paper.pdf" target="_blank" rel="noopener">Download PDF Paper ↗</a>
+                    </div>
+
+                    <!-- Slidable Paper Highlights Carousel Card -->
+                    <div class="paper-carousel-box">
+                        <div class="paper-slide active" data-pslide="1">
+                            <span class="mono badge-marigold">Part I — Executive Diagnosis</span>
+                            <h3>The $600B IT Buyback vs $20B Deeptech Gap</h3>
+                            <p>India generated ~$600 billion in IT services profits over the last decade, yet allocated only $10–20 billion to AI & deeptech. Bridging this gap requires connecting Cambridge's research rigour with Indian engineering depth and patient private capital.</p>
+                        </div>
+                        <div class="paper-slide" data-pslide="2">
+                            <span class="mono badge-marigold">Part II — The Three Frontier Tracks</span>
+                            <h3>Population Scale & Orbital Compute</h3>
+                            <p>Applying India's Digital Public Infrastructure (DPI) model to sovereign AI compute; combining ISRO-grade spacecraft thermal engineering with UK space capital; and leveraging genomics to drive down healthcare cost curves globally.</p>
+                        </div>
+                        <div class="paper-slide" data-pslide="3">
+                            <span class="mono badge-marigold">Part III — The Bilateral Sangam</span>
+                            <h3>A Durable Confluence Ahead of UK–India CETA</h3>
+                            <p>Launched alongside the UK–India Free Trade Agreement, the network creates standing working pipelines across academia (Cambridge & IISER/IIT), founders, and institutional capital (A3 Capital, EPOCH, UK VC/Debt).</p>
+                        </div>
+
+                        <!-- Paper Slide Controls -->
+                        <div class="paper-controls">
+                            <button class="btn-icon" id="paperPrev">‹</button>
+                            <span class="mono" id="paperSlideText" style="color:var(--cam);">Summary 1 of 3</span>
+                            <button class="btn-icon" id="paperNext">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07 CONVENERS & LEADERSHIP GRID (EXACT ORDER: GAURAV MAHAJAN 8th, SRIRAM KINTADA LAST) -->
+        <section class="band" id="conveners" style="background:var(--paper-2)">
+            <div class="wrap rail">
+                <p class="mono rail__label">07 — Conveners</p>
+                <div>
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Who convenes this.</h2>
+                    <div class="people">
+
+                        <!-- 1. Sanjay Phadke -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">SP</div>
+                            <div>
+                                <h3>Sanjay Phadke</h3>
+                                <span class="mono person__role">EPOCH AI Accelerator / A3 Capital</span>
+                                <p>Founder & Managing Partner of A3 Capital and Founder of EPOCH AI Accelerator. Author of <em>AI Decoded</em> and <em>Fintech Future</em>. Orchestrating bilateral deeptech pipelines.</p>
+                            </div>
+                        </div>
+
+                        <!-- 2. Dr. Jaideep Prabhu -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">JP</div>
+                            <div>
+                                <h3>Dr. Jaideep Prabhu</h3>
+                                <span class="mono person__role">Cambridge Judge Business School</span>
+                                <p>Jawaharlal Nehru Professor of Indian Business and Enterprise, Director of CIGB at Cambridge Judge Business School. World authority on frugal innovation.</p>
+                            </div>
+                        </div>
+
+                        <!-- 3. Serish Gandikota -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">SG</div>
+                            <div>
+                                <h3>Serish Gandikota</h3>
+                                <span class="mono person__role">Frugal AI Hub / CJBS</span>
+                                <p>Co-creator of the Frugal AI framework and Hub at CJBS, pioneering purpose-built, affordable, and institutional AI architectures.</p>
+                            </div>
+                        </div>
+
+                        <!-- 4. Srinivas Varadarajan -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">SV</div>
+                            <div>
+                                <h3>Srinivas Varadarajan</h3>
+                                <span class="mono person__role">Founder & CEO, Igan Labs</span>
+                                <p>Principal Architect for Aadhaar and pioneer of sustainable micro data centers. Developer of PowerMind AI energy optimization and FM2 compute hardware.</p>
+                            </div>
+                        </div>
+
+                        <!-- 5. Dr. Luisa Corrado -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">LC</div>
+                            <div>
+                                <h3>Dr. Luisa Corrado</h3>
+                                <span class="mono person__role">Cambridge Space Economy Initiative</span>
+                                <p>Co-lead of the Space Economy Initiative at CJBS. Specialist in orbital data infrastructure, solar energy economics, in-space manufacturing, and governance.</p>
+                            </div>
+                        </div>
+
+                        <!-- 6. Satish Wani -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">SW</div>
+                            <div>
+                                <h3>Satish Wani</h3>
+                                <span class="mono person__role">Ex-ISRO Thermal Lead & Space Systems</span>
+                                <p>Former ISRO lead thermal engineer for the historic Chandrayaan-1 lunar mission. Specialist in spacecraft thermal management and satellite systems.</p>
+                            </div>
+                        </div>
+
+                        <!-- 7. Brishni -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">B</div>
+                            <div>
+                                <h3>Brishni</h3>
+                                <span class="mono person__role">UK Financial Ecosystem & Capital</span>
+                                <p>Cambridge alum and specialist in UK–India private debt, venture warrants, British International Investment (BII) climate capital, and infrastructure financing.</p>
+                            </div>
+                        </div>
+
+                        <!-- 8. Gaurav Mahajan -->
+                        <div class="visual-person-card highlight-person">
+                            <div class="person__mark mark-gold">GM</div>
+                            <div>
+                                <h3>Gaurav Mahajan</h3>
+                                <span class="mono person__role">Network Organizer & Technical Lead</span>
+                                <p>Orchestrating the bilateral network's technical infrastructure, digital platform, stakeholder coordination, and digital asset integration across Cambridge, London, and India.</p>
+                            </div>
+                        </div>
+
+                        <!-- 9. Sriram Kintada (LAST) -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">SK</div>
+                            <div>
+                                <h3>Sriram Kintada</h3>
+                                <span class="mono person__role">Host & Network Moderator</span>
+                                <p>Facilitator of the bilateral network inaugural roundtable, connecting Cambridge research depth with deeptech founders and institutional capital.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08 TAKE PART -->
+        <section class="band band--dark" id="participate">
+            <div class="wrap rail">
+                <p class="mono rail__label">08 — Take Part</p>
+                <div>
+                    <h2 class="section-title">The network runs between the roundtables.</h2>
+                    <div class="ways">
+                        <div class="way">
+                            <h3>Join a Roundtable</h3>
+                            <p>Sessions run under the Chatham House Rule in London, Cambridge, and India.</p>
+                            <a href="#" id="openInviteBtn2">Request an invitation ↗</a>
+                        </div>
+                        <div class="way">
+                            <h3>Partner on a Track</h3>
+                            <p>For institutions, funds and corporates with a working stake in one of the three tracks.</p>
+                            <a href="#" id="openInviteBtn3">Start a conversation ↗</a>
+                        </div>
+                        <div class="way">
+                            <h3>Shared Materials & Assets</h3>
+                            <p>Access official decks, papers, and folder assets in Google Drive.</p>
+                            <a href="https://drive.google.com/drive/folders/18I0jmlCmMzDbq7ViN6JhoEOTSJghGQ1k?usp=sharing" target="_blank" rel="noopener">Access Google Drive Repository ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap">
+            <p class="mono">Cambridge–India Frontier Technology Network</p>
+            <p>Launched at the inaugural roundtable, London, 15 July 2026 — advancing UK–India collaboration in frontier technologies alongside the UK–India Free Trade Agreement.</p>
+            <div style="margin-top: 1rem; display:flex; gap:1.5rem; flex-wrap:wrap;">
+                <a href="https://drive.google.com/drive/folders/18I0jmlCmMzDbq7ViN6JhoEOTSJghGQ1k?usp=sharing" target="_blank" rel="noopener" style="color:var(--cam);">Google Drive Repository ↗</a>
+                <a href="./presentation-deck.pdf" target="_blank" rel="noopener" style="color:var(--cam);">Presentation Deck (PDF) ↗</a>
+                <a href="./discussion-paper.pdf" target="_blank" rel="noopener" style="color:var(--cam);">Discussion Paper (PDF) ↗</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Join Network Modal -->
+    <div class="modal-overlay" id="inviteModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Join the Network</h3>
+                <button class="modal-close" id="closeInviteBtn">✕</button>
+            </div>
+            <div class="modal-body">
+                <form id="inviteForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-input" required placeholder="e.g. Dr. Sarah Jenkins">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" class="form-input" required placeholder="name@institution.ac.uk or name@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization & Title</label>
+                        <input type="text" id="organization" class="form-input" required placeholder="e.g. Cambridge Deeptech / Founder">
+                    </div>
+                    <div class="form-group">
+                        <label for="trackInterest">Primary Track Interest</label>
+                        <select id="trackInterest" class="form-input">
+                            <option value="ai-infra">Track I: AI Infrastructure & Frugal AI</option>
+                            <option value="space">Track II: Space Data Centres & Orbital Compute</option>
+                            <option value="genomics">Track III: Genomics & Frugal Health</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--solid" style="width:100%;">Submit Network Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toastMessage">Action completed successfully.</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[2026-07-31T17:26:31.510Z] GET http://localhost:8080/ → 200 (2ms, 46194B)
+[2026-07-31T17:26:31.516Z] GET https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap → 200 (190ms, 1459B)
+[2026-07-31T17:26:31.517Z] GET http://localhost:8080/style.css → 200 (9ms, 30940B)
+[2026-07-31T17:26:31.517Z] GET http://localhost:8080/app.js → 200 (10ms, 16040B)
+[2026-07-31T17:26:31.558Z] GET http://localhost:8080/ → 206 (1ms, -237B)
+[2026-07-31T17:26:31.745Z] GET https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7PkRXMw.woff2 → pending (?ms, ?B)
+[2026-07-31T17:26:31.745Z] GET https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2 → pending (?ms, ?B)
+[2026-07-31T17:26:31.745Z] GET https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2 → pending (?ms, ?B)

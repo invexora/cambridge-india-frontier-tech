@@ -1,0 +1,540 @@
+/* ==========================================================================
+   Cambridge–India Frontier Technology Network - Ultra-Visual & Compact System
+   Palette: Dark Ink (#0E1730), Cambridge Blue (#7FB3C4), Marigold Gold (#E0972A),
+            Madder Red (#9C3B2E), Paper (#EEF0EA), River Teal (#1F5C6B)
+   ========================================================================== */
+
+:root {
+    --ink: #0E1730;
+    --ink-2: #182444;
+    --river: #1F5C6B;
+    --cam: #7FB3C4;
+    --marigold: #E0972A;
+    --madder: #9C3B2E;
+    --paper: #EEF0EA;
+    --paper-2: #E3E7DE;
+    --stone: #6E7A72;
+    --pad: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, serif;
+    font-size: clamp(1rem, 0.4vw + 0.9rem, 1.1rem);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "SOFT" 20, "WONK" 1;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.018em;
+    margin: 0;
+}
+
+p { margin: 0 0 0.9em; }
+a { color: inherit; }
+
+.mono {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrap {
+    max-width: 74rem;
+    margin: 0 auto;
+    padding-inline: var(--pad);
+}
+
+.section-title {
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    margin-bottom: 0.8rem;
+}
+
+.measure-short {
+    max-width: 32rem;
+    color: #C9D2DF;
+    font-size: 1rem;
+}
+
+/* ---------- Structural Rail ---------- */
+.band { padding-block: clamp(3rem, 6vw, 4.5rem); }
+.band--dark { background: var(--ink); color: var(--paper); }
+.band--dark .mono { color: var(--cam); }
+
+.rail {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: clamp(1.2rem, 3vw, 2.5rem);
+    align-items: start;
+}
+
+.rail__label { color: var(--stone); padding-top: 0.4rem; }
+.band--dark .rail__label { color: var(--cam); }
+
+@media (max-width: 760px) {
+    .rail { grid-template-columns: 1fr; gap: 0.8rem; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    background: var(--ink);
+    color: var(--paper);
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(2rem, 4vw, 3rem) 0.5rem;
+}
+
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--cam);
+    padding-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.brand-title { text-decoration: none; font-weight: 600; font-size: 0.85rem; color: #FFF; }
+.hero__navlinks { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.hero__navlinks a { text-decoration: none; opacity: 0.85; transition: color 0.2s; }
+.hero__navlinks a:hover { color: var(--marigold); opacity: 1; }
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5.2vw, 4.2rem);
+    max-width: 17ch;
+}
+.hero h1 em { font-style: normal; color: var(--marigold); }
+
+.hero__deck {
+    max-width: 36rem;
+    margin-top: 1.2rem;
+    font-size: clamp(1rem, 0.4vw + 0.95rem, 1.18rem);
+    color: #C9D2DF;
+}
+
+.hero__meta {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--cam);
+}
+
+.pulse-tag {
+    color: var(--marigold);
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+.btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.8rem 1.4rem;
+    border: 1px solid var(--marigold);
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.btn--sm { padding: 0.45rem 0.85rem; font-size: 0.68rem; }
+.btn--solid { background: var(--marigold); color: var(--ink); }
+.btn--solid:hover { background: #EFAF48; transform: translateY(-2px); }
+.btn--ghost { color: var(--marigold); }
+.btn--ghost:hover { background: var(--marigold); color: var(--ink); transform: translateY(-2px); }
+.btn--cam { border-color: var(--cam); color: var(--cam); }
+.btn--cam:hover { background: var(--cam); color: var(--ink); }
+
+/* SVG Confluence Animation */
+.confluence {
+    display: block; width: 100%; height: auto; margin-top: 2rem; margin-bottom: -1px;
+}
+
+.confluence .stream {
+    fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 1600; stroke-dashoffset: 1600;
+    animation: draw 2.6s cubic-bezier(.33, .9, .35, 1) forwards;
+}
+
+.confluence .stream--cam { stroke: var(--cam); animation-delay: .2s; }
+.confluence .stream--ind { stroke: var(--marigold); animation-delay: .2s; }
+.confluence .stream--merged { stroke: #DCE4EE; stroke-width: 2.2; animation-delay: 1.4s; animation-duration: 1.5s; }
+.confluence .stream--lost { stroke: var(--madder); stroke-dasharray: 3 8; stroke-dashoffset: 0; opacity: 0; animation: fadein 2s ease forwards 2s; }
+.confluence .node { opacity: 0; animation: fadein 1s ease forwards 1.8s; }
+
+.pulse-node {
+    animation: nodePulse 2s infinite ease-in-out 2s;
+}
+
+@keyframes nodePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+}
+
+.confluence text {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    opacity: 0; animation: fadein 1.2s ease forwards 1s;
+}
+
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fadein { to { opacity: 1; } }
+
+/* ---------- Thesis & Visual Cards ---------- */
+.pull {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.2rem;
+}
+
+.visual-card {
+    background: var(--paper-2);
+    border: 1px solid rgba(14, 23, 48, 0.1);
+    border-radius: 4px;
+    padding: 1.4rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glow-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card {
+    background: #FFF;
+    border-left: 4px solid var(--marigold);
+}
+
+.badge-madder { color: var(--madder); font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+.badge-marigold { color: var(--marigold); font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+
+.stat-highlight {
+    background: rgba(14, 23, 48, 0.04);
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    margin-block: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1;
+}
+
+.stat-label { font-size: 0.85rem; color: var(--stone); margin-top: 0.2rem; }
+
+/* ---------- Cost Comparison Chart ---------- */
+.costs { margin-top: 1.5rem; display: grid; gap: 1.2rem; }
+.cost__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
+.cost__name { font-size: 0.92rem; }
+.cost__fig { font-family: "IBM Plex Mono", monospace; font-size: 0.82rem; }
+.cost__track { height: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; overflow: hidden; }
+.cost__bar { height: 100%; width: var(--w); border-radius: 2px; transition: width 1.2s ease; }
+.cost--isro .cost__bar { background: var(--marigold); }
+.cost--low .cost__bar { background: var(--cam); }
+.cost--high .cost__bar { background: var(--madder); }
+
+/* ---------- Tracks ---------- */
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.track-card {
+    background: #FFF;
+    border: 1px solid rgba(14, 23, 48, 0.1);
+    border-radius: 4px;
+    padding: 1.4rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.track-card:hover { transform: translateY(-3px); border-color: var(--marigold); }
+.track-icon { font-size: 1.8rem; margin-bottom: 0.6rem; }
+.track-num { color: var(--madder); font-weight: 600; display: block; margin-bottom: 0.4rem; }
+
+.track-badge {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.65rem;
+    color: var(--river);
+    background: rgba(31, 92, 107, 0.08);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 0.8rem;
+}
+
+/* ---------- COMPACT SLIDE CAROUSEL (MAX 420px HEIGHT) ---------- */
+.deck-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-box {
+    background: #0A1226;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.carousel-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 380px;
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(14, 23, 48, 0.85);
+    color: var(--paper);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.carousel-arrow:hover { background: var(--marigold); color: var(--ink); }
+.arrow-prev { left: 0.8rem; }
+.arrow-next { right: 0.8rem; }
+
+.carousel-dots-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.slide-counter-label { color: var(--cam); font-size: 0.72rem; }
+.dots-wrapper { display: flex; gap: 0.5rem; }
+
+.dot-btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--cam);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.dot-btn.active, .dot-btn:hover {
+    background: var(--marigold);
+    border-color: var(--marigold);
+    transform: scale(1.2);
+}
+
+/* ---------- Video Broadcast Box ---------- */
+.chapter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-block: 1rem; }
+.chip-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 0.68rem; padding: 0.35rem 0.7rem;
+    border: 1px solid rgba(14, 23, 48, 0.2); border-radius: 2px; background: #FFF; color: var(--ink); cursor: pointer;
+}
+.chip-btn:hover, .chip-btn.active { border-color: var(--marigold); background: var(--marigold); color: var(--ink); }
+
+.compact-video-box {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 380px;
+    background: #000; border-radius: 4px; overflow: hidden; border: 1px solid rgba(14, 23, 48, 0.15);
+}
+
+.custom-video { width: 100%; height: 100%; object-fit: cover; }
+
+.video-overlay {
+    position: absolute; inset: 0; background: linear-gradient(to top, rgba(14, 23, 48, 0.92), rgba(14, 23, 48, 0.5));
+    display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; text-align: center; z-index: 5;
+    transition: opacity 0.3s ease;
+}
+.video-overlay.hidden { opacity: 0; visibility: hidden; }
+
+.play-btn-large {
+    width: 64px; height: 64px; border-radius: 50%; background: var(--marigold); color: var(--ink);
+    border: none; font-size: 1.6rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 0.8rem; transition: transform 0.2s;
+}
+.play-btn-large:hover { transform: scale(1.1); background: #EFAF48; }
+
+.video-caption-title { font-family: "Fraunces", serif; font-size: 1.2rem; color: var(--paper); }
+.video-speakers-list { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; color: var(--cam); max-width: 36rem; margin-top: 0.4rem; }
+
+.video-controls {
+    position: absolute; bottom: 0; left: 0; right: 0; height: 40px; background: rgba(14, 23, 48, 0.9);
+    display: flex; align-items: center; padding: 0 0.8rem; gap: 0.8rem; z-index: 10;
+}
+.ctrl-btn { background: none; border: none; color: var(--paper); font-size: 0.9rem; cursor: pointer; }
+.progress-bar-wrap { flex: 1; height: 5px; background: rgba(255, 255, 255, 0.2); border-radius: 2px; overflow: hidden; cursor: pointer; }
+.progress-fill { height: 100%; width: 0%; background: var(--marigold); }
+.video-time { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; color: var(--cam); }
+
+/* ---------- COMPACT PAPER CAROUSEL ---------- */
+.paper-carousel-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 1.5rem;
+    max-width: 800px;
+}
+
+.paper-slide { display: none; }
+.paper-slide.active { display: block; }
+.paper-slide h3 { font-size: 1.4rem; margin-block: 0.4rem 0.6rem; color: var(--paper); }
+.paper-slide p { color: #C9D2DF; font-size: 0.95rem; line-height: 1.5; }
+
+.paper-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--cam);
+    background: transparent;
+    color: var(--cam);
+    font-family: "IBM Plex Mono", monospace;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.btn-icon:hover { background: var(--marigold); color: var(--ink); border-color: var(--marigold); }
+
+/* ---------- Conveners Grid ---------- */
+.people {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.2rem;
+}
+
+.visual-person-card {
+    background: #FFF;
+    border: 1px solid rgba(14, 23, 48, 0.1);
+    border-radius: 4px;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+    align-items: start;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.visual-person-card:hover { transform: translateY(-2px); border-color: var(--marigold); }
+
+.highlight-person {
+    border-left: 4px solid var(--marigold);
+    background: #FFFBF0;
+}
+
+.person__mark {
+    width: 3.5rem; height: 3.5rem; border-radius: 50%; display: grid; place-items: center;
+    font-family: "Fraunces", serif; font-size: 1.2rem; background: var(--paper); color: var(--river);
+    border: 1px solid rgba(14, 23, 48, 0.12);
+}
+
+.mark-gold { background: var(--marigold); color: var(--ink); font-weight: 700; }
+
+.person h3 { font-size: 1.08rem; margin-bottom: 0.1rem; }
+.person__role { color: var(--madder); display: block; margin-bottom: 0.4rem; font-weight: 600; font-size: 0.65rem; }
+.person p { font-size: 0.88rem; margin: 0; color: #3A4557; line-height: 1.4; }
+
+/* ---------- Participate ---------- */
+.ways { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+.way h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.way p { font-size: 0.9rem; color: #C9D2DF; margin-bottom: 0.6rem; }
+.way a { color: var(--marigold); text-decoration: none; font-family: "IBM Plex Mono", monospace; font-size: 0.75rem; border-bottom: 1px solid rgba(224, 151, 42, 0.4); }
+
+/* ---------- Footer ---------- */
+footer { background: var(--ink); color: #8FA0B4; padding-block: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+footer .wrap { display: flex; justify-content: space-between; gap: 1.2rem; flex-wrap: wrap; align-items: baseline; }
+footer p { margin: 0; font-size: 0.85rem; max-width: 32rem; }
+
+/* ---------- Modal & Toast ---------- */
+.modal-overlay {
+    position: fixed; inset: 0; background: rgba(14, 23, 48, 0.85); backdrop-filter: blur(5px);
+    display: flex; align-items: center; justify-content: center; padding: 1rem; z-index: 1000;
+    opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s;
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+.modal-card {
+    background: var(--paper); color: var(--ink); border-radius: 4px; max-width: 500px; width: 100%;
+    padding: 1.8rem; position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(14, 23, 48, 0.1); }
+.modal-close { background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--stone); }
+
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; margin-bottom: 0.3rem; }
+.form-input { width: 100%; padding: 0.65rem; border: 1px solid rgba(14, 23, 48, 0.2); border-radius: 2px; font-family: "Newsreader", serif; font-size: 0.95rem; }
+
+.toast {
+    position: fixed; bottom: 2rem; right: 2rem; background: var(--marigold); color: var(--ink);
+    padding: 0.8rem 1.4rem; border-radius: 2px; font-family: "IBM Plex Mono", monospace; font-size: 0.78rem;
+    z-index: 2000; transform: translateY(100px); opacity: 0; transition: all 0.3s ease;
+}
+.toast.active { transform: translateY(0); opacity: 1; }
