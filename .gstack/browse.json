@@ -1,9 +1,0 @@
-{
-  "pid": 6775,
-  "port": 25009,
-  "token": "1b36754a-6f43-43e7-8cb6-6fe748740a30",
-  "startedAt": "2026-07-31T17:26:31.426Z",
-  "serverPath": "/Users/gauravm/.gemini/config/plugins/gstack/browse/src/server.ts",
-  "mode": "launched",
-  "configHash": "303a7eeccc03078b"
-}
