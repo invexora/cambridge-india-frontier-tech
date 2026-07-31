@@ -22,8 +22,8 @@
                     <a href="#frugal">The Edge</a>
                     <a href="#tracks">Tracks</a>
                     <a href="#deck">Slide Deck</a>
-                    <a href="#video">Video</a>
                     <a href="#paper">Paper</a>
+                    <a href="#broadcast">Broadcast</a>
                     <a href="#conveners">Conveners</a>
                 </div>
             </nav>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="cta-row">
                     <a class="btn btn--solid" href="#deck">View Visual Slide Deck</a>
-                    <button class="btn btn--ghost" id="readPaperModalBtn">Read Discussion Paper</button>
+                    <a class="btn btn--ghost" href="#paper">View Discussion Paper</a>
                     <button class="btn btn--ghost btn--cam" id="openInviteBtn">Join Network</button>
                 </div>
             </div>
@@ -58,7 +58,7 @@
     </header>
 
     <main>
-        <!-- 01 THESIS (COMPACT VISUAL CARDS) -->
+        <!-- 01 THESIS -->
         <section class="band" id="thesis">
             <div class="wrap rail">
                 <p class="mono rail__label">01 — Thesis</p>
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <!-- 02 THE EDGE (COMPACT COST COMPARISON GRAPHIC) -->
+        <!-- 02 THE EDGE -->
         <section class="band band--dark" id="frugal">
             <div class="wrap rail">
                 <p class="mono rail__label">02 — The Edge</p>
@@ -114,7 +114,7 @@
             </div>
         </section>
 
-        <!-- 03 STRATEGIC TRACKS (3 VISUAL CARDS) -->
+        <!-- 03 STRATEGIC TRACKS -->
         <section class="band" id="tracks">
             <div class="wrap rail">
                 <p class="mono rail__label">03 — Tracks</p>
@@ -149,7 +149,7 @@
             </div>
         </section>
 
-        <!-- 04 COMPACT SLIDABLE VISUAL PRESENTATION DECK (CAROUSEL) -->
+        <!-- 04 VISUAL SLIDE DECK CAROUSEL -->
         <section class="band band--dark" id="deck">
             <div class="wrap rail">
                 <p class="mono rail__label">04 — Visual Deck</p>
@@ -159,7 +159,6 @@
                         <a class="btn btn--solid btn--sm" href="./presentation-deck.pdf" target="_blank" rel="noopener">Download PDF Deck ↗</a>
                     </div>
                     
-                    <!-- Compact Slide Carousel Box -->
                     <div class="carousel-box">
                         <div class="carousel-viewport">
                             <button class="carousel-arrow arrow-prev" id="slidePrev" aria-label="Previous Slide">‹</button>
@@ -182,88 +181,59 @@
             </div>
         </section>
 
-        <!-- 05 ROUNDTABLE VIDEO BROADCAST -->
-        <section class="band" id="video">
+        <!-- 05 SLIDABLE DISCUSSION PAPER CAROUSEL (SAME AS SLIDE DECK) -->
+        <section class="band" id="paper">
             <div class="wrap rail">
-                <p class="mono rail__label">05 — Video Broadcast</p>
-                <div>
-                    <h2 class="section-title">Inaugural Roundtable Broadcast</h2>
-                    <div class="chapter-bar">
-                        <span class="mono" style="color:var(--river);">Chapters:</span>
-                        <button class="chip-btn active" data-time="0">00:00 Welcome</button>
-                        <button class="chip-btn" data-time="250">04:10 CETA Launch</button>
-                        <button class="chip-btn" data-time="804">13:24 Frugal AI</button>
-                        <button class="chip-btn" data-time="1142">19:02 Green Infra</button>
-                        <button class="chip-btn" data-time="1531">25:31 Space Solar</button>
-                        <button class="chip-btn" data-time="2116">35:16 ISRO Thermal</button>
-                        <button class="chip-btn" data-time="2435">40:35 VC & Debt</button>
-                    </div>
-
-                    <div class="compact-video-box">
-                        <div class="video-overlay" id="videoOverlay">
-                            <button class="play-btn-large" id="playVideoBtn" aria-label="Play Roundtable">▶</button>
-                            <div class="video-caption-title">Cambridge–India Frontier Technology Network Launch</div>
-                            <div class="video-speakers-list">Featuring: Dr. Jaideep Prabhu, Sanjay Phadke, Serish Gandikota, Srinivas Varadarajan, Dr. Luisa Corrado, Satish Wani, Brishni, Gaurav Mahajan, Sriram Kintada</div>
-                        </div>
-                        <video id="mainVideo" class="custom-video" poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720' viewBox='0 0 1280 720'><rect width='1280' height='720' fill='%230e1730'/><text x='50%' y='45%' dominant-baseline='middle' text-anchor='middle' fill='%23e0972a' font-family='Fraunces' font-size='36'>CAMBRIDGE–INDIA FRONTIER TECH</text><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%237fb3c4' font-family='IBM Plex Mono' font-size='18'>Inaugural Roundtable Broadcast · London</text></svg>">
-                            <source src="#" type="video/mp4">
-                        </video>
-                        <div class="video-controls">
-                            <button class="ctrl-btn" id="btnPlayPause">▶</button>
-                            <div class="progress-bar-wrap" id="progressBarWrap">
-                                <div class="progress-fill" id="progressFill"></div>
-                            </div>
-                            <span class="video-time" id="currentTime">00:00</span> / <span class="video-time">59:54</span>
-                            <button class="ctrl-btn" id="btnMute">🔊</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 06 SLIDABLE DISCUSSION PAPER CAROUSEL -->
-        <section class="band band--dark" id="paper">
-            <div class="wrap rail">
-                <p class="mono rail__label">06 — Paper</p>
+                <p class="mono rail__label">05 — Discussion Paper</p>
                 <div>
                     <div class="deck-header-row">
                         <div>
                             <h2 class="section-title">India @ AI & Deeptech Crossroads</h2>
-                            <p class="mono" style="color:var(--cam);">Discussion Paper by Sanjay Phadke & Dr. Jaideep Prabhu</p>
+                            <p class="mono" style="color:var(--river);">Discussion Paper by Sanjay Phadke & Dr. Jaideep Prabhu · 15 July 2026</p>
                         </div>
-                        <a class="btn btn--solid btn--sm" href="./discussion-paper.pdf" target="_blank" rel="noopener">Download PDF Paper ↗</a>
+                        <a class="btn btn--solid btn--sm" href="./discussion-paper.pdf" target="_blank" rel="noopener">Download Paper PDF ↗</a>
                     </div>
 
-                    <!-- Slidable Paper Highlights Carousel Card -->
-                    <div class="paper-carousel-box">
-                        <div class="paper-slide active" data-pslide="1">
-                            <span class="mono badge-marigold">Part I — Executive Diagnosis</span>
-                            <h3>The $600B IT Buyback vs $20B Deeptech Gap</h3>
-                            <p>India generated ~$600 billion in IT services profits over the last decade, yet allocated only $10–20 billion to AI & deeptech. Bridging this gap requires connecting Cambridge's research rigour with Indian engineering depth and patient private capital.</p>
+                    <!-- Paper Visual Carousel (Page-1, Page-2, Page-3) -->
+                    <div class="carousel-box paper-deck-box">
+                        <div class="carousel-viewport">
+                            <button class="carousel-arrow arrow-prev" id="paperPagePrev" aria-label="Previous Page">‹</button>
+                            <img id="carouselPaperImg" src="paper-page-1.png" alt="Discussion Paper Page" class="carousel-img">
+                            <button class="carousel-arrow arrow-next" id="paperPageNext" aria-label="Next Page">›</button>
                         </div>
-                        <div class="paper-slide" data-pslide="2">
-                            <span class="mono badge-marigold">Part II — The Three Frontier Tracks</span>
-                            <h3>Population Scale & Orbital Compute</h3>
-                            <p>Applying India's Digital Public Infrastructure (DPI) model to sovereign AI compute; combining ISRO-grade spacecraft thermal engineering with UK space capital; and leveraging genomics to drive down healthcare cost curves globally.</p>
-                        </div>
-                        <div class="paper-slide" data-pslide="3">
-                            <span class="mono badge-marigold">Part III — The Bilateral Sangam</span>
-                            <h3>A Durable Confluence Ahead of UK–India CETA</h3>
-                            <p>Launched alongside the UK–India Free Trade Agreement, the network creates standing working pipelines across academia (Cambridge & IISER/IIT), founders, and institutional capital (A3 Capital, EPOCH, UK VC/Debt).</p>
-                        </div>
-
-                        <!-- Paper Slide Controls -->
-                        <div class="paper-controls">
-                            <button class="btn-icon" id="paperPrev">‹</button>
-                            <span class="mono" id="paperSlideText" style="color:var(--cam);">Summary 1 of 3</span>
-                            <button class="btn-icon" id="paperNext">›</button>
+                        <div class="carousel-dots-bar">
+                            <span class="mono slide-counter-label" id="paperCounterText">Page 1 of 3</span>
+                            <div class="dots-wrapper">
+                                <button class="pdot-btn active" data-pslide="1"></button>
+                                <button class="pdot-btn" data-pslide="2"></button>
+                                <button class="pdot-btn" data-pslide="3"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 07 CONVENERS & LEADERSHIP GRID (EXACT ORDER: GAURAV MAHAJAN 8th, SRIRAM KINTADA LAST) -->
+        <!-- 06 BROADCAST RECORDING LINK CARD (INSTEAD OF VIDEO PLAYER) -->
+        <section class="band band--dark" id="broadcast">
+            <div class="wrap rail">
+                <p class="mono rail__label">06 — Broadcast</p>
+                <div>
+                    <h2 class="section-title">Inaugural Roundtable Broadcast</h2>
+                    <div class="broadcast-link-card">
+                        <div class="b-icon">📡</div>
+                        <div class="b-info">
+                            <h3>Watch the Full Inaugural Roundtable Recording</h3>
+                            <p>Recorded live in London on 15 July 2026, coinciding with the launch of the UK–India Free Trade Agreement (CETA).</p>
+                            <p class="mono" style="color:var(--cam);">Featuring: Dr. Jaideep Prabhu, Sanjay Phadke, Serish Gandikota, Srinivas Varadarajan, Dr. Luisa Corrado, Satish Wani, Brishni, Sriram Kintada, Gaurav Mahajan</p>
+                        </div>
+                        <a class="btn btn--solid" href="https://drive.google.com/drive/folders/18I0jmlCmMzDbq7ViN6JhoEOTSJghGQ1k?usp=sharing" target="_blank" rel="noopener">Watch Recording / Access Google Drive ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07 CONVENERS & LEADERSHIP GRID (GAURAV MAHAJAN AT VERY LAST POSITION: 9th) -->
         <section class="band" id="conveners" style="background:var(--paper-2)">
             <div class="wrap rail">
                 <p class="mono rail__label">07 — Conveners</p>
@@ -341,23 +311,23 @@
                             </div>
                         </div>
 
-                        <!-- 8. Gaurav Mahajan -->
-                        <div class="visual-person-card highlight-person">
-                            <div class="person__mark mark-gold">GM</div>
-                            <div>
-                                <h3>Gaurav Mahajan</h3>
-                                <span class="mono person__role">Network Organizer & Technical Lead</span>
-                                <p>Orchestrating the bilateral network's technical infrastructure, digital platform, stakeholder coordination, and digital asset integration across Cambridge, London, and India.</p>
-                            </div>
-                        </div>
-
-                        <!-- 9. Sriram Kintada (LAST) -->
+                        <!-- 8. Sriram Kintada -->
                         <div class="visual-person-card">
                             <div class="person__mark">SK</div>
                             <div>
                                 <h3>Sriram Kintada</h3>
                                 <span class="mono person__role">Host & Network Moderator</span>
                                 <p>Facilitator of the bilateral network inaugural roundtable, connecting Cambridge research depth with deeptech founders and institutional capital.</p>
+                            </div>
+                        </div>
+
+                        <!-- 9. Gaurav Mahajan (NORMAL CARD STYLE, AT VERY LAST POSITION!) -->
+                        <div class="visual-person-card">
+                            <div class="person__mark">GM</div>
+                            <div>
+                                <h3>Gaurav Mahajan</h3>
+                                <span class="mono person__role">Network Organizer & Technical Lead</span>
+                                <p>Orchestrating the bilateral network's technical infrastructure, digital platform, stakeholder coordination, and digital asset integration across Cambridge, London, and India.</p>
                             </div>
                         </div>
 
