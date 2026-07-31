@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Cambridge–India Frontier Technology Network - Clean & Readable Paper View
+   Cambridge–India Frontier Technology Network - Full Screen Paper Reader View
    ========================================================================== */
 
 :root {
@@ -49,7 +49,7 @@ a { color: inherit; }
 }
 
 .wrap {
-    max-width: 74rem;
+    max-width: 76rem;
     margin: 0 auto;
     padding-inline: var(--pad);
 }
@@ -215,12 +215,13 @@ a { color: inherit; }
     transition: opacity 0.25s ease;
 }
 
-/* ---------- CLEAN & READABLE LARGE PAPER VIEW (NO BLACK SIDE BARS) ---------- */
+/* ---------- NEAR FULL-SCREEN VISIBLE PAPER READER (VERY THIN BORDER) ---------- */
 .paper-carousel-box {
     background: transparent;
     border: none;
     padding: 0;
-    max-width: 780px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -235,12 +236,12 @@ a { color: inherit; }
 .paper-page-viewport {
     aspect-ratio: 1 / 1.3;
     width: 100%;
-    max-width: 720px;
-    max-height: 720px;
+    max-width: 940px;
+    max-height: 860px;
     background: #FFF;
-    border-radius: 4px;
-    box-shadow: 0 8px 30px rgba(14, 23, 48, 0.12);
-    border: 1px solid rgba(14, 23, 48, 0.15);
+    border-radius: 2px;
+    border: 1px solid rgba(14, 23, 48, 0.12);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .paper-doc-img {
@@ -255,12 +256,12 @@ a { color: inherit; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 46px;
-    height: 46px;
-    background: rgba(14, 23, 48, 0.85);
+    width: 48px;
+    height: 48px;
+    background: rgba(14, 23, 48, 0.88);
     color: var(--paper);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     cursor: pointer;
     border-radius: 50%;
     display: flex;
@@ -270,7 +271,7 @@ a { color: inherit; }
     transition: all 0.2s ease;
 }
 
-.carousel-arrow:hover { background: var(--marigold); color: var(--ink); }
+.carousel-arrow:hover { background: var(--marigold); color: var(--ink); transform: translateY(-50%) scale(1.08); }
 .arrow-prev { left: 0.8rem; }
 .arrow-next { right: 0.8rem; }
 
@@ -284,7 +285,7 @@ a { color: inherit; }
 }
 
 .paper-carousel-box .carousel-dots-bar {
-    border-top-color: rgba(14, 23, 48, 0.15);
+    border-top-color: rgba(14, 23, 48, 0.12);
 }
 
 .slide-counter-label { color: var(--cam); font-size: 0.72rem; }
