@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Cambridge–India Frontier Technology Network - Visual & Slidable System
+   Cambridge–India Frontier Technology Network - Visual System
    ========================================================================== */
 
 :root {
@@ -184,7 +184,7 @@ a { color: inherit; }
 .track-num { color: var(--madder); font-weight: 600; display: block; margin-bottom: 0.4rem; }
 .track-badge { font-family: "IBM Plex Mono", monospace; font-size: 0.65rem; color: var(--river); background: rgba(31, 92, 107, 0.08); padding: 0.25rem 0.5rem; border-radius: 2px; display: inline-block; margin-top: 0.8rem; }
 
-/* ---------- SLIDABLE CAROUSEL FOR DECK & PAPER (SLIGHTLY INCREASED SIZE: MAX 460px HEIGHT) ---------- */
+/* ---------- SLIDABLE SLIDE DECK (16:9 LANDSCAPE) ---------- */
 .deck-header-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
 
 .carousel-box {
@@ -195,16 +195,11 @@ a { color: inherit; }
     max-width: 880px;
 }
 
-.paper-deck-box {
-    background: #FFF;
-    border: 1px solid rgba(14, 23, 48, 0.15);
-}
-
 .carousel-viewport {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    max-height: 460px;
+    max-height: 440px;
     background: #000;
     border-radius: 4px;
     overflow: hidden;
@@ -213,15 +208,46 @@ a { color: inherit; }
     justify-content: center;
 }
 
-.paper-deck-box .carousel-viewport {
-    background: #FAFAFA;
-}
-
 .carousel-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: opacity 0.25s ease;
+}
+
+/* ---------- SLIDABLE DISCUSSION PAPER (PORTRAIT DOCUMENT VIEWPORT) ---------- */
+.paper-carousel-box {
+    background: #FFF;
+    border: 1px solid rgba(14, 23, 48, 0.15);
+    border-radius: 6px;
+    padding: 1.4rem;
+    max-width: 880px;
+}
+
+.paper-viewport-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--paper-2);
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(14, 23, 48, 0.1);
+}
+
+.paper-page-viewport {
+    aspect-ratio: 1 / 1.35;
+    max-height: 540px;
+    max-width: 440px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.paper-doc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #FFF;
 }
 
 .carousel-arrow {
@@ -256,12 +282,12 @@ a { color: inherit; }
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.paper-deck-box .carousel-dots-bar {
+.paper-carousel-box .carousel-dots-bar {
     border-top-color: rgba(14, 23, 48, 0.1);
 }
 
 .slide-counter-label { color: var(--cam); font-size: 0.72rem; }
-.paper-deck-box .slide-counter-label { color: var(--river); }
+.paper-carousel-box .slide-counter-label { color: var(--river); font-weight: 600; }
 
 .dots-wrapper { display: flex; gap: 0.5rem; }
 
@@ -284,7 +310,7 @@ a { color: inherit; }
     transform: scale(1.25);
 }
 
-/* ---------- BROADCAST LINK CARD (NO VIDEO PLAYER BOX) ---------- */
+/* ---------- BROADCAST LINK CARD ---------- */
 .broadcast-link-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);

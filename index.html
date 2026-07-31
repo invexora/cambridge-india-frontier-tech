@@ -160,7 +160,7 @@
                     </div>
                     
                     <div class="carousel-box">
-                        <div class="carousel-viewport">
+                        <div class="carousel-viewport slide-deck-viewport">
                             <button class="carousel-arrow arrow-prev" id="slidePrev" aria-label="Previous Slide">‹</button>
                             <img id="carouselSlideImg" src="slide-1.png" alt="Presentation Slide" class="carousel-img">
                             <button class="carousel-arrow arrow-next" id="slideNext" aria-label="Next Slide">›</button>
@@ -181,7 +181,7 @@
             </div>
         </section>
 
-        <!-- 05 SLIDABLE DISCUSSION PAPER CAROUSEL (SAME AS SLIDE DECK) -->
+        <!-- 05 DISCUSSION PAPER VISUAL CAROUSEL (PORTRAIT PROPORTIONED, SHARP & CLEAR) -->
         <section class="band" id="paper">
             <div class="wrap rail">
                 <p class="mono rail__label">05 — Discussion Paper</p>
@@ -194,12 +194,14 @@
                         <a class="btn btn--solid btn--sm" href="./discussion-paper.pdf" target="_blank" rel="noopener">Download Paper PDF ↗</a>
                     </div>
 
-                    <!-- Paper Visual Carousel (Page-1, Page-2, Page-3) -->
-                    <div class="carousel-box paper-deck-box">
-                        <div class="carousel-viewport">
-                            <button class="carousel-arrow arrow-prev" id="paperPagePrev" aria-label="Previous Page">‹</button>
-                            <img id="carouselPaperImg" src="paper-page-1.png" alt="Discussion Paper Page" class="carousel-img">
-                            <button class="carousel-arrow arrow-next" id="paperPageNext" aria-label="Next Page">›</button>
+                    <!-- Paper Document Page Viewport (Centered, Portrait Aspect Ratio) -->
+                    <div class="paper-carousel-box">
+                        <div class="paper-viewport-wrapper">
+                            <div class="carousel-viewport paper-page-viewport">
+                                <button class="carousel-arrow arrow-prev" id="paperPagePrev" aria-label="Previous Page">‹</button>
+                                <img id="carouselPaperImg" src="paper-page-1.png" alt="Discussion Paper Page" class="carousel-img paper-doc-img">
+                                <button class="carousel-arrow arrow-next" id="paperPageNext" aria-label="Next Page">›</button>
+                            </div>
                         </div>
                         <div class="carousel-dots-bar">
                             <span class="mono slide-counter-label" id="paperCounterText">Page 1 of 3</span>
@@ -214,7 +216,7 @@
             </div>
         </section>
 
-        <!-- 06 BROADCAST RECORDING LINK CARD (INSTEAD OF VIDEO PLAYER) -->
+        <!-- 06 BROADCAST RECORDING LINK CARD -->
         <section class="band band--dark" id="broadcast">
             <div class="wrap rail">
                 <p class="mono rail__label">06 — Broadcast</p>
