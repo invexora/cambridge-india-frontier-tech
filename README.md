@@ -5,9 +5,9 @@ Official web showcase for the **Cambridge–India Frontier Technology Network**,
 ## Overview
 
 The Cambridge–India Frontier Technology Network convenes capital, research, and policy across three strategic tracks:
-- **Track I: AI Infrastructure & Frugal AI** — Sovereign compute, green data centers, and Digital Public Infrastructure (DPI) application scale.
-- **Track II: Space Data Centres & Orbital Compute** — In-space compute, heat rejection, and ISRO-grade thermal engineering.
-- **Track III: Genomics & Frugal Healthcare** — Population-scale genomic data governance across UK–India jurisdictions.
+- **Track I: AI Infrastructure & Frugal AI:** Sovereign compute, green data centers, and Digital Public Infrastructure (DPI) application scale.
+- **Track II: Space Data Centres & Orbital Compute:** In-space compute, heat rejection, and ISRO-grade thermal engineering.
+- **Track III: Genomics & Frugal Healthcare:** Population-scale genomic data governance across UK–India jurisdictions.
 
 ## Features
 
