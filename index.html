@@ -43,17 +43,32 @@
             </div>
         </div>
 
-        <!-- Signature Confluence SVG Animation -->
-        <svg class="confluence" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Two rivers converging into one — the Sangam.">
-            <path class="stream stream--cam" d="M-20,40 C 200,40 360,80 470,125 C 520,145 560,152 596,158"/>
-            <path class="stream stream--ind" d="M1220,30 C 1000,30 820,80 726,125 C 682,145 638,152 604,158"/>
-            <path class="stream stream--lost" d="M60,240 C 260,230 440,200 552,165 C 572,158 586,158 596,158"/>
-            <path class="stream stream--merged" d="M600,160 C 600,190 598,215 600,240"/>
-            <circle class="node pulse-node" cx="600" cy="159" r="6" fill="#E0972A"/>
-            <circle class="node" cx="600" cy="159" r="14" fill="none" stroke="#E0972A" stroke-width="1.5" opacity="0.4"/>
-            <text x="15" y="32" fill="#7FB3C4">Cambridge</text>
-            <text x="1185" y="22" fill="#E0972A" text-anchor="end">India</text>
-            <text x="70" y="230" fill="#9C3B2E">The Unseen Third Stream</text>
+        <!-- Signature UK–India bridge illustration -->
+        <svg class="bridge-art" viewBox="0 0 1200 300" preserveAspectRatio="none" role="img" aria-label="A bridge connecting Cambridge in the UK and India across a shared frontier.">
+            <path class="bridge-art__horizon" d="M0 248H1200"/>
+            <path class="bridge-art__water bridge-art__water--cam" d="M0 263C150 251 270 271 420 261S690 250 840 263 1060 273 1200 258"/>
+            <path class="bridge-art__water bridge-art__water--ind" d="M0 278C170 267 280 286 440 277S700 267 860 279 1060 287 1200 273"/>
+
+            <g class="bridge-art__structure" aria-hidden="true">
+                <path class="bridge-art__cable" d="M112 211C208 211 238 82 310 82 438 82 508 188 600 188S762 82 890 82C962 82 992 211 1088 211"/>
+                <path class="bridge-art__cable bridge-art__cable--secondary" d="M112 211C208 211 238 116 310 116 438 116 508 205 600 205S762 116 890 116C962 116 992 211 1088 211"/>
+                <path class="bridge-art__hanger" d="M215 199V190M260 169V190M310 82V190M370 111V190M430 144V190M490 178V190M710 178V190M770 144V190M830 111V190M890 82V190M940 169V190M985 199V190"/>
+                <path class="bridge-art__deck" d="M108 190H1092"/>
+                <path class="bridge-art__deck-line" d="M108 202H1092"/>
+                <path class="bridge-art__tower" d="M292 190V65H328V190M872 190V65H908V190"/>
+                <path class="bridge-art__tower-cap" d="M282 65H338M862 65H918"/>
+                <circle class="bridge-art__node bridge-art__node--cam" cx="108" cy="190" r="5"/>
+                <circle class="bridge-art__node bridge-art__node--ind" cx="1092" cy="190" r="5"/>
+                <circle class="bridge-art__node bridge-art__node--mid" cx="600" cy="190" r="5"/>
+            </g>
+
+            <g class="bridge-art__labels">
+                <text class="bridge-art__eyebrow" x="34" y="35">UK / CAMBRIDGE</text>
+                <text class="bridge-art__eyebrow bridge-art__eyebrow--ind" x="1166" y="35" text-anchor="end">INDIA</text>
+                <text class="bridge-art__label" x="34" y="55">RESEARCH + CAPITAL</text>
+                <text class="bridge-art__label bridge-art__label--ind" x="1166" y="55" text-anchor="end">APPLICATION + SCALE</text>
+                <text class="bridge-art__midlabel" x="600" y="233" text-anchor="middle">THE SHARED FRONTIER</text>
+            </g>
         </svg>
     </header>
 
@@ -225,11 +240,11 @@
 
                     <!-- Interactive Broadcast Image Card -->
                     <div class="broadcast-banner-card">
-                        <a href="https://drive.google.com/drive/folders/18I0jmlCmMzDbq7ViN6JhoEOTSJghGQ1k?usp=sharing" target="_blank" rel="noopener" class="banner-link-wrapper">
+                        <a href="https://youtu.be/v_-3DrA-_O8?si=taSMBjJgTQIUBn2f" target="_blank" rel="noopener" class="banner-link-wrapper">
                             <img src="broadcast-thumbnail.jpg" alt="Cambridge-India Frontier Tech Network Inaugural Roundtable Broadcast Image" class="broadcast-banner-img">
                             <div class="banner-overlay">
                                 <div class="play-icon-circle">▶</div>
-                                <span class="mono banner-play-text">Watch Broadcast Recording on Google Drive ↗</span>
+                                <span class="mono banner-play-text">Watch Broadcast Recording on YouTube ↗</span>
                             </div>
                         </a>
                         <div class="banner-caption-bar">
@@ -237,7 +252,7 @@
                                 <strong>AI & DEEPTECH: TRANSFORMING FUTURES TOGETHER</strong>
                                 <span>Inaugural Roundtable · 15 July 2026 · London</span>
                             </div>
-                            <a class="btn btn--solid btn--sm" href="https://drive.google.com/drive/folders/18I0jmlCmMzDbq7ViN6JhoEOTSJghGQ1k?usp=sharing" target="_blank" rel="noopener">Access Recording Folder ↗</a>
+                            <a class="btn btn--solid btn--sm" href="https://youtu.be/v_-3DrA-_O8?si=taSMBjJgTQIUBn2f" target="_blank" rel="noopener">Watch Recording on YouTube ↗</a>
                         </div>
                     </div>
                 </div>
